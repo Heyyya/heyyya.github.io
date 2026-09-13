@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development — Rommel Besin Beljot</title>
+<meta name="description" content="Web development projects by Rommel Besin Beljot, including a guidance office support system, a regex challenge game, and a private couple photo album app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<header id="header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>oming.dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="dropdown">
+        <button id="dropdownBtn" class="nav-link dropdown-btn" aria-expanded="false">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
+        <ul id="dropdownMenu" class="dropdown-menu">
+          <li><a href="web-development.html" class="active">Web Development</a></li>
+          <li><a href="mobile-development.html">Mobile Development</a></li>
+          <li><a href="graphic-design.html">Graphic Design</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="index.html" class="mnav">Home</a>
+  <a href="about.html" class="mnav">About</a>
+  <div class="mnav-dropdown">
+    <button id="mDropdownBtn" class="mnav mnav-dropdown-btn">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
+    <div id="mDropdownMenu" class="mnav-dropdown-menu">
+      <a href="web-development.html">Web Development</a>
+      <a href="mobile-development.html">Mobile Development</a>
+      <a href="graphic-design.html">Graphic Design</a>
+    </div>
+  </div>
+  <a href="contact.html" class="mnav">Contact</a>
+</nav>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <div class="container">
+    <div class="eyebrow">Services</div>
+    <h1>Web Development</h1>
+    <p>Web platforms and applications I've built, from front-end to back-end.</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" style="padding-top:20px;" id="work">
+  <div class="container">
+
+    <div class="project-card reveal">
+      <div class="project-visual"><i class="fa-solid fa-comments"></i></div>
+      <div class="project-body">
+        <div class="project-tag">Web Platform</div>
+        <h3>Guidance Office Support System</h3>
+        <p>A web-based guidance platform that allows students to communicate with available guidance counselors online for academic and personal support.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-circle"></i> Online Counseling &amp; Real-Time Chat</li>
+          <li><i class="fa-solid fa-circle"></i> Secure Student Authentication</li>
+          <li><i class="fa-solid fa-circle"></i> Counselor Availability Status</li>
+          <li><i class="fa-solid fa-circle"></i> Academic &amp; Personal Support Requests</li>
+        </ul>
+        <div class="tech-badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">PHP</span>
+          <span class="badge">Supabase</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-visual"><i class="fa-solid fa-gamepad"></i></div>
+      <div class="project-body">
+        <div class="project-tag">Web Game</div>
+        <h3>Regex Challenge Game</h3>
+        <p>A multi-page educational web game where players master Regular Expressions through 7 progressively unlocked categories of pattern-matching challenges, complete with live scoring, a results summary, and a standalone global leaderboard.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-circle"></i> 7 Unlockable Challenge Categories</li>
+          <li><i class="fa-solid fa-circle"></i> Live Regex Validation &amp; Scoring</li>
+          <li><i class="fa-solid fa-circle"></i> Results Summary with Stats</li>
+          <li><i class="fa-solid fa-circle"></i> Global Top 10 Leaderboard</li>
+        </ul>
+        <div class="tech-badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Supabase</span>
+        </div>
+        <a href="https://github.com/Heyyya/regex-challenge-game.io" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-visual"><i class="fa-solid fa-images"></i></div>
+      <div class="project-body">
+        <div class="project-tag">Web Application</div>
+        <h3>Our Memories — Couple Album</h3>
+        <p>A private photo &amp; video album for two authorized accounts only, with albums/collections, a full-screen media viewer, a built-in collage maker, and monthly slideshows — secured end-to-end with Supabase Auth, Row Level Security, and signed media URLs.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-circle"></i> Private Auth — No Public Sign-Up</li>
+          <li><i class="fa-solid fa-circle"></i> Albums, Collections &amp; Collage Maker</li>
+          <li><i class="fa-solid fa-circle"></i> Timeline, Favorites, Archive &amp; Trash</li>
+          <li><i class="fa-solid fa-circle"></i> Row-Level-Secured Media Storage</li>
+        </ul>
+        <div class="tech-badges">
+          <span class="badge">Next.js</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">Tailwind CSS</span>
+          <span class="badge">Supabase</span>
+        </div>
+        <a href="https://github.com/Rome-glitch-spec/couple-album" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-wrap">
+      <p>© 2026 Rommel Besin Beljot · Computer Science Student | Aspiring Full-Stack Developer</p>
+      <div class="footer-social">
+        <a href="https://github.com/Heyyya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/ming.O.Stick.O.1212" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="mailto:rbeljot1212@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="designed-by">Designed &amp; developed by Rommel Besin Beljot</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

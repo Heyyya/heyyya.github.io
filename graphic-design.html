@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphic Design — Rommel Besin Beljot</title>
+<meta name="description" content="Graphic design and UI/UX work by Rommel Besin Beljot using Figma and Canva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<header id="header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>oming.dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="dropdown">
+        <button id="dropdownBtn" class="nav-link dropdown-btn" aria-expanded="false">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
+        <ul id="dropdownMenu" class="dropdown-menu">
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="mobile-development.html">Mobile Development</a></li>
+          <li><a href="graphic-design.html" class="active">Graphic Design</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="index.html" class="mnav">Home</a>
+  <a href="about.html" class="mnav">About</a>
+  <div class="mnav-dropdown">
+    <button id="mDropdownBtn" class="mnav mnav-dropdown-btn">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
+    <div id="mDropdownMenu" class="mnav-dropdown-menu">
+      <a href="web-development.html">Web Development</a>
+      <a href="mobile-development.html">Mobile Development</a>
+      <a href="graphic-design.html">Graphic Design</a>
+    </div>
+  </div>
+  <a href="contact.html" class="mnav">Contact</a>
+</nav>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <div class="container">
+    <div class="eyebrow">Services</div>
+    <h1>Graphic Design</h1>
+    <p>UI/UX and visual design work using Figma and Canva.</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" style="padding-top:20px;" id="work">
+  <div class="container">
+
+    <div class="project-card reveal">
+      <div class="project-visual"><i class="fa-solid fa-palette"></i></div>
+      <div class="project-body">
+        <div class="project-tag">UI/UX &amp; Graphic Design</div>
+        <h3>Design Work — In Progress</h3>
+        <p>Alongside development, I'm building out UI/UX and graphic design work using Figma and Canva. Case studies for this category are coming soon as projects are finished.</p>
+        <div class="tech-badges">
+          <span class="badge">Figma</span>
+          <span class="badge">Canva</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-wrap">
+      <p>© 2026 Rommel Besin Beljot · Computer Science Student | Aspiring Full-Stack Developer</p>
+      <div class="footer-social">
+        <a href="https://github.com/Heyyya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/ming.O.Stick.O.1212" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="mailto:rbeljot1212@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="designed-by">Designed &amp; developed by Rommel Besin Beljot</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
