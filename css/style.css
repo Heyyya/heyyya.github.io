@@ -249,6 +249,20 @@ header.scrolled{
   display:grid;grid-template-columns:1fr 1fr;
 }
 .project-card:hover{transform:translateY(-4px);border-color:var(--accent);}
+
+.service-focus{
+  display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;
+  background:var(--surface);border:1px solid var(--border);border-radius:18px;
+  box-shadow:var(--shadow);padding:28px 30px;margin-bottom:28px;
+}
+.service-icon{
+  width:120px;height:120px;border-radius:20px;background:linear-gradient(160deg, rgba(176,141,87,0.12), rgba(58,74,107,0.2));
+  border:1px solid rgba(176,141,87,0.2);display:flex;align-items:center;justify-content:center;
+  color:var(--accent);font-size:2.5rem;
+}
+.service-copy{padding-right:10px;}
+.service-copy h3{font-size:clamp(1.5rem,2vw,2rem);margin:12px 0 14px;}
+.service-copy p{color:var(--text-dim);margin-bottom:16px;}
 .project-card:nth-child(even){grid-template-columns:1fr 1fr;}
 .project-card:nth-child(even) .project-visual{order:2;}
 .project-visual{
