@@ -1,167 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rommel Besin Beljot — Computer Science Student | Aspiring Full-Stack Developer</title>
-<meta name="description" content="Portfolio of Rommel Besin Beljot, a Computer Science student and aspiring full-stack developer specializing in web and mobile development.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="bg-grid"></div>
-
-<header id="header">
-  <div class="container nav-wrap">
-    <a href="index.html" class="logo"><span class="dot"></span>oming.dev</a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link active">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li class="dropdown">
-        <button id="dropdownBtn" class="nav-link dropdown-btn" aria-expanded="false">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
-        <ul id="dropdownMenu" class="dropdown-menu">
-          <li><a href="services-web-development.html">Web Development</a></li>
-          <li><a href="services-mobile-development.html">Mobile Development</a></li>
-          <li><a href="services-graphic-design.html">Graphic Design</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <button id="projectsDropdownBtn" class="nav-link dropdown-btn" aria-expanded="false">Projects <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
-        <ul id="projectsDropdownMenu" class="dropdown-menu">
-          <li><a href="web-development.html">Web Development</a></li>
-          <li><a href="mobile-development.html">Mobile Development</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
-      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header>
-
-<div class="menu-overlay" id="menuOverlay"></div>
-<nav class="mobile-menu" id="mobileMenu">
-  <button class="menu-close" id="menuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
-  <a href="index.html" class="mnav">Home</a>
-  <a href="about.html" class="mnav">About</a>
-  <div class="mnav-dropdown">
-    <button id="mDropdownBtn" class="mnav mnav-dropdown-btn">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
-    <div id="mDropdownMenu" class="mnav-dropdown-menu">
-      <a href="services-web-development.html">Web Development</a>
-      <a href="services-mobile-development.html">Mobile Development</a>
-      <a href="services-graphic-design.html">Graphic Design</a>
-    </div>
-  </div>
-  <div class="mnav-dropdown">
-    <button id="mProjectsDropdownBtn" class="mnav mnav-dropdown-btn">Projects <i class="fa-solid fa-chevron-down dropdown-arrow"></i></button>
-    <div id="mProjectsDropdownMenu" class="mnav-dropdown-menu">
-      <a href="web-development.html">Web Development</a>
-      <a href="mobile-development.html">Mobile Development</a>
-    </div>
-  </div>
-  <a href="contact.html" class="mnav">Contact</a>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <div class="hero-tag"><span class="pulse"></span>Open to internships &amp; junior dev roles</div>
-      <h1>Hi, I'm <span class="accent">Rommel Besin Beljot</span></h1>
-      <div class="hero-role"><span id="typed"></span><span class="cursor">&nbsp;</span></div>
-      <p class="tagline">Building modern, responsive, and user-friendly digital solutions through creativity, innovation, and continuous learning.</p>
-      <div class="hero-btns">
-        <a href="work.html" class="btn btn-primary"><i class="fa-solid fa-code"></i> View My Work</a>
-        <a href="contact.html" class="btn btn-outline"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
-        <a href="#" class="btn btn-outline" id="resumeBtn"><i class="fa-solid fa-download"></i> Download Resume</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>3rd Year</strong><span>BS Computer Science</span></div>
-        <div><strong>6+</strong><span>Projects Built</span></div>
-        <div><strong>3</strong><span>Languages Spoken</span></div>
-      </div>
-    </div>
-
-    <div class="reveal">
-      <div class="hero-photo" style="margin-bottom:20px;">
-        <img src="images/profile.jpg" alt="Portrait of Rommel Besin Beljot">
-      </div>
-    </div>
-
-    <div class="code-panel reveal" style="grid-column:1/-1;">
-      <div class="code-head">
-        <span></span><span></span><span></span>
-        <span class="code-file">about-oming.js</span>
-      </div>
-      <div class="code-body">
-<div><span class="ln">01</span><span class="tok-key">const</span> <span class="tok-fn">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span></div>
-<div><span class="ln">02</span>&nbsp;&nbsp;<span class="tok-prop">name</span><span class="tok-punc">:</span> <span class="tok-str">"Rommel Besin Beljot"</span><span class="tok-punc">,</span></div>
-<div><span class="ln">03</span>&nbsp;&nbsp;<span class="tok-prop">alias</span><span class="tok-punc">:</span> <span class="tok-str">"Oming"</span><span class="tok-punc">,</span></div>
-<div><span class="ln">04</span>&nbsp;&nbsp;<span class="tok-prop">role</span><span class="tok-punc">:</span> <span class="tok-str">"CS Student · Full-Stack Dev"</span><span class="tok-punc">,</span></div>
-<div><span class="ln">05</span>&nbsp;&nbsp;<span class="tok-prop">based</span><span class="tok-punc">:</span> <span class="tok-str">"Kolambugan, Lanao del Norte, PH"</span><span class="tok-punc">,</span></div>
-<div><span class="ln">06</span>&nbsp;&nbsp;<span class="tok-prop">stack</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"JS"</span><span class="tok-punc">,</span> <span class="tok-str">"PHP"</span><span class="tok-punc">,</span> <span class="tok-str">"Dart"</span><span class="tok-punc">,</span> <span class="tok-str">"Flutter"</span><span class="tok-punc">,</span> <span class="tok-str">"Supabase"</span><span class="tok-punc">]</span><span class="tok-punc">,</span></div>
-<div><span class="ln">07</span>&nbsp;&nbsp;<span class="tok-prop">languages</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"Cebuano"</span><span class="tok-punc">,</span> <span class="tok-str">"Filipino"</span><span class="tok-punc">,</span> <span class="tok-str">"English"</span><span class="tok-punc">]</span><span class="tok-punc">,</span></div>
-<div><span class="ln">08</span>&nbsp;&nbsp;<span class="tok-prop">hobbies</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"pickleball"</span><span class="tok-punc">,</span> <span class="tok-str">"baseball"</span><span class="tok-punc">,</span> <span class="tok-str">"manga"</span><span class="tok-punc">]</span><span class="tok-punc">,</span></div>
-<div><span class="ln">09</span>&nbsp;&nbsp;<span class="tok-fn">isLearning</span><span class="tok-punc">:</span> <span class="tok-key">true</span><span class="tok-punc">,</span></div>
-<div><span class="ln">10</span>&nbsp;&nbsp;<span class="tok-fn">availableForWork</span><span class="tok-punc">:</span> <span class="tok-key">true</span><span class="tok-punc">,</span></div>
-<div><span class="ln">11</span><span class="tok-punc">};</span></div>
-<div><span class="ln">12</span></div>
-<div><span class="ln">13</span><span class="tok-com">// let's build something great together</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- QUICK NAVIGATION -->
-<section class="section" style="padding-top:0;">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="eyebrow">Explore</div>
-      <h2>Get to know my work</h2>
-      <p>A quick look at where to find everything — my story, my projects, and how to reach me.</p>
-    </div>
-    <div class="explore-grid">
-      <a href="about.html" class="explore-card reveal">
-        <i class="fa-solid fa-user"></i>
-        <h3>About Me</h3>
-        <p>My background, education, goals, and the skills I bring to every project.</p>
-        <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="work.html" class="explore-card reveal">
-        <i class="fa-solid fa-briefcase"></i>
-        <h3>My Work</h3>
-        <p>Featured academic and personal projects that show how I approach problems.</p>
-        <span>View projects <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="contact.html" class="explore-card reveal">
-        <i class="fa-solid fa-paper-plane"></i>
-        <h3>Contact</h3>
-        <p>Have an opportunity or project in mind? Let's talk — my inbox is open.</p>
-        <span>Get in touch <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-wrap">
-      <p>© 2026 Rommel Besin Beljot · Computer Science Student | Aspiring Full-Stack Developer</p>
-      <div class="footer-social">
-        <a href="https://github.com/Heyyya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.facebook.com/ming.O.Stick.O.1212" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="mailto:rbeljot1212@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
-    <p class="designed-by">Designed &amp; developed by Rommel Besin Beljot</p>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d10" />
+    <meta name="description" content="Portfolio of Rommel Besin Beljot, a Computer Science student and aspiring full-stack developer specializing in web and mobile development." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Rommel Besin Beljot — Computer Science Student | Aspiring Full-Stack Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -425,3 +425,24 @@ footer{border-top:1px solid var(--border);padding:44px 0;position:relative;z-ind
 .mnav-dropdown-menu.show{display:flex;}
 .mnav-dropdown-menu a{font-size:.98rem;font-weight:500;color:var(--text-dim);}
 .mnav-dropdown-menu a:hover{color:var(--accent);}
+
+/* React app */
+.nav-links .dropdown-btn{font-family:var(--font-body);}
+.nav-links .dropdown-menu a{padding:9px 12px;}
+.mobile-menu .mnav-dropdown-btn{color:var(--text);font-size:1.15rem;font-weight:600;}
+.skills-section{background:var(--bg-alt);}
+.form-field{margin-bottom:16px;}
+.contact-submit{width:100%;justify-content:center;}
+button.btn{font-family:var(--font-body);}
+body.menu-open{overflow:hidden;}
+@media(max-width:960px){
+  .service-focus{grid-template-columns:110px 1fr;gap:22px;}
+  .service-icon{width:96px;height:96px;font-size:2rem;}
+}
+@media(max-width:600px){
+  .service-focus{grid-template-columns:1fr;padding:24px;}
+  .service-icon{width:72px;height:72px;font-size:1.7rem;border-radius:14px;}
+  .contact-info-card,.contact-form{padding:26px 22px;}
+  .goal-cards{grid-template-columns:1fr;}
+  .code-body{overflow-x:auto;font-size:.75rem;padding:20px 14px;}
+}
