@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { copyFileSync, cpSync, mkdirSync, readdirSync } from 'node:fs';
+import { copyFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const pageFiles = [
+  'app.html',
   'about.html',
   'work.html',
   'services.html',
@@ -20,43 +21,18 @@ function legacyPageEntries() {
   return {
     name: 'legacy-page-entries',
     closeBundle() {
-      const builtApp = resolve('dist/app.html');
       const builtIndex = resolve('dist/index.html');
-      copyFileSync(builtApp, builtIndex);
-      pageFiles.forEach((file) => {
-        copyFileSync(builtIndex, resolve('dist', file));
-      });
-    },
-  };
-}
-
-function publishBranchRoot() {
-  return {
-    name: 'publish-branch-root',
-    closeBundle() {
-      const outputDir = resolve('dist');
-      const rootDir = resolve('.');
-      for (const entry of readdirSync(outputDir, { withFileTypes: true })) {
-        if (entry.name === 'app.html') continue;
-        const source = resolve(outputDir, entry.name);
-        const destination = resolve(rootDir, entry.name);
-        if (entry.isDirectory()) {
-          mkdirSync(destination, { recursive: true });
-          cpSync(source, destination, { recursive: true, force: true });
-        } else {
-          copyFileSync(source, destination);
-        }
-      }
+      pageFiles.forEach((file) => copyFileSync(builtIndex, resolve('dist', file)));
     },
   };
 }
 
 export default defineConfig({
-  plugins: [react(), legacyPageEntries(), publishBranchRoot()],
+  plugins: [react(), legacyPageEntries()],
   base: './',
   build: {
     rollupOptions: {
-      input: { index: resolve('app.html') },
+      input: { index: resolve('index.html') },
     },
   },
 });
